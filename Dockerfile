@@ -22,7 +22,7 @@ RUN apt-get update && apt-get install -y -q --no-install-recommends \
 ENV NVM_DIR /usr/local/nvm
 ENV NODE_VERSION 0.10
 
-RUN gem install --no-rdoc --no-ri compass -v 1.0.0.alpha.21
+RUN gem install --no-rdoc --no-ri compass -v 1.0.3
 
 # Install nvm with node and npm
 RUN  ./src/creationix-nvm-install.sh \
